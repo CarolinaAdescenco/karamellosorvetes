@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/karamellosorvetes/static/css/main.bd574100.css",
-    "main.js": "/karamellosorvetes/static/js/main.30f94658.js",
+    "main.js": "/karamellosorvetes/static/js/main.9db7f7de.js",
     "static/js/453.bf50056f.chunk.js": "/karamellosorvetes/static/js/453.bf50056f.chunk.js",
     "static/media/karamello-sorvetes-acai-loja.jpeg": "/karamellosorvetes/static/media/karamello-sorvetes-acai-loja.e23e4395f406dc9d9f3a.jpeg",
     "static/media/glyphicons-halflings-regular.svg": "/karamellosorvetes/static/media/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg",
@@ -12,11 +12,11 @@
     "static/media/glyphicons-halflings-regular.woff2": "/karamellosorvetes/static/media/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2",
     "index.html": "/karamellosorvetes/index.html",
     "main.bd574100.css.map": "/karamellosorvetes/static/css/main.bd574100.css.map",
-    "main.30f94658.js.map": "/karamellosorvetes/static/js/main.30f94658.js.map",
+    "main.9db7f7de.js.map": "/karamellosorvetes/static/js/main.9db7f7de.js.map",
     "453.bf50056f.chunk.js.map": "/karamellosorvetes/static/js/453.bf50056f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd574100.css",
-    "static/js/main.30f94658.js"
+    "static/js/main.9db7f7de.js"
   ]
 }
