@@ -1,100 +1,119 @@
 {
+  "Info": {
+    "logo": {
+      "title": "Karamello Sorvetes",
+      "largeImage": "img/logo-karamello-sorvetes.png",
+      "smallImage": "img/logo-karamello-sorvetes.png"
+    },
+    "menuItems": [
+      {
+        "ref": "#sobre",
+        "label": "Sobre nós"
+      },
+      {
+        "ref": "#diferenciais",
+        "label": "Diferenciais"
+      },
+      {
+        "ref": "#produtos",
+        "label": "Produtos"
+      },
+      {
+        "ref": "#torne-se-um-parceiro",
+        "label": "Torne-se um parceiro"
+      }
+    ]
+  },
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Karamello Sorvetes",
+    "paragraph": "Desde 2015, fazemos com paixão os melhores sorvetes, açaís e picolés. Mais que uma fábrica, somos uma marca apaixonada por qualidade, sabor e momentos felizes."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Nossa história começou com o desejo de oferecer sorvetes que fossem sinônimo de qualidade e alegria. Desde então, nos dedicamos a criar produtos deliciosos, com ingredientes selecionados e aquele toque especial que só a Karamello tem. Hoje, com quase uma década de tradição, atendemos tanto quem revende quanto quem busca um momento doce para compartilhar com a família e os amigos.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Produção artesanal com controle de qualidade",
+      "Variedade de sabores para todos os gostos",
+      "Atendimento próximo e personalizado",
+      "Produtos perfeitos para revenda e consumo próprio"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Compromisso com a satisfação de nossos clientes",
+      "Ingredientes frescos e selecionados",
+      "Quase 10 anos de experiência no mercado",
+      "Uma marca feita com amor e dedicação"
     ]
   },
   "Gallery": [
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/01-large.jpg",
-      "smallImage": "img/portfolio/01-small.jpg"
+      "title": "Açaí tradicional, trufado e +",
+      "largeImage": "img/portfolio/karamello-sorvetes-acai-loja.jpeg",
+      "smallImage": "img/portfolio/karamello-sorvetes-acai-loja.jpeg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/02-large.jpg",
-      "smallImage": "img/portfolio/02-small.jpg"
+      "title": "Açaí com frutas",
+      "largeImage": "img/portfolio/karamello-sorvetes-acai.jpeg",
+      "smallImage": "img/portfolio/karamello-sorvetes-acai.jpeg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/03-large.jpg",
-      "smallImage": "img/portfolio/03-small.jpg"
+      "title": "+ 25 sabores de picolé",
+      "largeImage": "img/portfolio/karamello-sorvetes-picole-atacado.jpeg",
+      "smallImage": "img/portfolio/karamello-sorvetes-picole-atacado.jpeg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpg",
-      "smallImage": "img/portfolio/04-small.jpg"
+      "title": "Picolé Gourmet: Brigadeiro, Skimo e +",
+      "largeImage": "img/portfolio/karamello-sorvetes-picole-gourmet.jpeg",
+      "smallImage": "img/portfolio/karamello-sorvetes-picole-gourmet.jpeg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/05-large.jpg",
-      "smallImage": "img/portfolio/05-small.jpg"
+      "title": "Picolé Skimo: chocolate, tentação, maracujá e +",
+      "largeImage": "img/portfolio/karamello-sorvetes-picole-skimo.jpeg",
+      "smallImage": "img/portfolio/karamello-sorvetes-picole-skimo.jpeg"
     },
     {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/06-large.jpg",
-      "smallImage": "img/portfolio/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/07-large.jpg",
-      "smallImage": "img/portfolio/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/08-large.jpg",
-      "smallImage": "img/portfolio/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "img/portfolio/09-large.jpg",
-      "smallImage": "img/portfolio/09-small.jpg"
+      "title": "Picolé atacado para revenda",
+      "largeImage": "img/portfolio/karamello-sorvetes-picole-atacado.jpeg",
+      "smallImage": "img/portfolio/karamello-sorvetes-picole-atacado.jpeg"
     }
   ],
+  "Contact": {
+    "address": "Rodovia Indio Tibiriçá, 4600, Suzano - SP, 08620-000 Raffo, Suzano - SP, 08620-000",
+    "addressLink": "https://www.google.com/maps/place/Karamello+Sorvetes/@-23.5867592,-46.3113295,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce7121b244270f:0x26af08b72e22f097!8m2!3d-23.5867641!4d-46.3087546!16s%2Fg%2F11hc_1p1yl?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D",
+    "phone": "+55 11 96625-8290",
+    "phoneLink": "https://wa.me/5511966258290?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Karamello%20Sorvetes%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es",
+    "email": "karamellosorvetes.vendas@gmail.com",
+    "facebook": "https://www.facebook.com/karamellosorvetes",
+    "instagram": "https://www.instagram.com/karamellosorvetes"
+  },
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-star",
+      "name": "Qualidade",
+      "text": "Cada sorvete, açaí e picolé é produzido com ingredientes frescos e cuidadosamente selecionados. Nosso padrão de qualidade garante o melhor sabor em cada colherada."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-th-list",
+      "name": "Variedade",
+      "text": "Sabores clássicos ou combinações criativas? Temos de tudo! Nossa linha atende desde quem busca o tradicional até quem adora explorar novos gostos."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-smile-o",
+      "name": "Atendimento",
+      "text": "Acreditamos que boas relações começam com um sorriso. Nosso time está sempre pronto para atender você com atenção, agilidade e aquele toque de carinho que faz a diferença."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-leaf",
+      "name": "Produção Artesanal",
+      "text": "Aqui, cada etapa do processo é feita com dedicação e cuidado. Da escolha dos ingredientes à finalização, garantimos um toque artesanal em tudo que criamos."
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-certificate",
+      "name": "Compromisso",
+      "text": "Estamos comprometidos com a sua satisfação e com a missão de oferecer produtos que encantam e momentos que marcam. Seja para consumo ou revenda, você pode contar conosco!"
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-truck",
+      "name": "Entrega",
+      "text": "Levamos a doçura da Karamello até você! Oferecemos serviços de entrega rápidos e eficientes, garantindo que seus pedidos cheguem sempre fresquinhos e prontos para encantar."
     }
   ],
   "Testimonials": [
@@ -151,14 +170,6 @@
       "job": "Project Manager"
     }
   ],
-  "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
-  },
   "Features": [
     {
       "icon": "fa fa-comments-o",

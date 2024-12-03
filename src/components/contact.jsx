@@ -6,46 +6,55 @@ const initialState = {
   name: "",
   email: "",
   message: "",
+  phone: ""
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, message, phone }, setState] = useState(initialState);
+
+  const [loading, setLoading] = useState(false);
+
+  const [status, setStatus] = useState({
+    show: false,
+    success: undefined
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+
+
   const handleSubmit = (e) => {
+    setLoading(true);
+
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_udmj438", "template_nve0hr5", e.target, "dzsrmwkx_e4CHvKNc")
       .then(
         (result) => {
-          console.log(result.text);
           clearState();
+          setStatus({ show: true, success: true });
+          setLoading(false)
         },
         (error) => {
-          console.log(error.text);
-        }
+          setStatus({ show: true, success: false })
+          setLoading(false)
+        },
+        () => setLoading(false)
       );
   };
   return (
-    <div>
+    <div id="torne-se-um-parceiro">
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>Torne-se um parceiro</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Preencha o formulário abaixo e retornaremos o mais breve possível
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -57,7 +66,21 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Nome"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Telefone"
                         required
                         onChange={handleChange}
                       />
@@ -85,7 +108,7 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="Mensagem"
                     required
                     onChange={handleChange}
                   ></textarea>
@@ -93,27 +116,47 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  { loading ? 'Enviando...' : 'Enviar mensagem'}
                 </button>
               </form>
+
+              {
+                status.show && status.success && (
+                  <div className="alert alert-success" role="alert">
+                    <span className="fa fa-check" aria-hidden="true"></span>
+                    <span className="alert-text">Email enviado com sucesso!</span>
+                  </div>
+                )
+              }
+
+              {
+                status.show && !status.success && (
+                  <div className="alert alert-error" role="alert">
+                    <span className="fa fa-exclamation-circle" aria-hidden="true"></span>
+                    <span className="alert-text">Erro ao enviar e-mail. Tente novamente!</span>
+                  </div>)
+              }
+
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>Contact Info</h3>
+              <h3>Contato</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> Nossa loja
                 </span>
-                {props.data ? props.data.address : "loading"}
+                <a href={props.data ? props.data.addressLink : ''} target="_blank" rel="noreferrer">
+                  {props.data ? props.data.address : "loading"}
+                </a>
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> WhatsApp
                 </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                <a href={props.data ? props.data.phoneLink : ''} target="_blank" rel="noreferrer">{props.data ? props.data.phone : "loading"}</a>
               </p>
             </div>
             <div className="contact-item">
@@ -121,7 +164,7 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
-                {props.data ? props.data.email : "loading"}
+                <a href={props.data ? `mailto:${props.data.email}` : ''}>{props.data ? props.data.email : "loading"}</a>
               </p>
             </div>
           </div>
@@ -130,18 +173,18 @@ export const Contact = (props) => {
               <div className="social">
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : "/"}>
+                    <a href={props.data ? props.data.facebook : "/"} target="_blank" rel="noreferrer">
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
+                    <a href={props.data ? props.data.instagram : "/"} target="_blank" rel="noreferrer">
+                      <i className="fa fa-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
+                    <a href={props.data ? props.data.phoneLink : "/"} target="_blank" rel="noreferrer">
+                      <i className="fa fa-whatsapp"></i>
                     </a>
                   </li>
                 </ul>
@@ -153,10 +196,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
+            &copy; {new Date().getFullYear()} - Feito com amor pela Karamello Sorvetes <i className="fa fa-heart"></i>
           </p>
         </div>
       </div>

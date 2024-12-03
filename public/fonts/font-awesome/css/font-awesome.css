@@ -168,6 +168,12 @@
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+.fa-ice-cream:before{
+ content: "\f810"
+}  
+.fa-smile:before{
+  
+} 
 .fa-glass:before {
   content: "\f000";
 }
